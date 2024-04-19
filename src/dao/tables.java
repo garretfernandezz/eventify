@@ -22,9 +22,10 @@ public class tables {
             //st.executeUpdate("CREATE TABLE events(eventID varchar(200) PRIMARY KEY, name VARCHAR(100), faculty varchar(100), venue varchar(50), decription varchar(100), date varchar(100))");
             //st.executeUpdate("drop table sponsors ");
               
+            //st.executeUpdate("CREATE TABLE sponsors(sponsorID int AUTO_INCREMENT primary key, name varchar(200), mobileNumber VARCHAR(100), email VARCHAR(200), amount int, event varchar(200), foreign key(event) references events(eventID), description varchar(500))");
             
-
-            st.executeUpdate("CREATE TABLE sponsors(sponsorID int AUTO_INCREMENT primary key, name varchar(200), mobileNumber VARCHAR(100), email VARCHAR(200), amount int, event varchar(200), foreign key(event) references events(eventID), description varchar(500))");
+            st.executeUpdate("CREATE TABLE expenditure(expenditureID int AUTO_INCREMENT primary key, amount INT, paymentMethod VARCHAR(200), description text, eventID VARCHAR(200), FOREIGN KEY(eventID) REFERENCES events(eventID))");
+            
             JOptionPane.showMessageDialog(null, "Table Create Successfully!");
             
             

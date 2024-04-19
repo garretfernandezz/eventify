@@ -11,7 +11,7 @@ public class ConnectionProvider {
         try{
             Class.forName("com.mysql.jdbc.Driver");
             
-            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/assignment?useSSL=false","root","clarisse11$");
+            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/assignment?useSSL=false","","");
             return con;
         }
         catch (Exception e){

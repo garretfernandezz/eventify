@@ -317,7 +317,7 @@ public class AdminDashboard extends javax.swing.JFrame {
         getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1095, 469, 400, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/adminDashboardBackground.png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, -60, 3030, 910));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, -30, 3030, 910));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
